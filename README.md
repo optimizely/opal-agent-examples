@@ -1,0 +1,10 @@
+# Example Optimizely Opal Agent Definitions
+Optimizely Opal agents are a foundational component for extending and automating functionalities within the Optimizely One platform. These agents—categorized as Specialized, Workflow, and Autonomous—are designed to execute complex tasks, integrate with external systems, and provide intelligent automation across your digital experience stack. Effective agent deployment hinges on precise, well-structured definitions that dictate their behavior, capabilities, and interaction models.
+This repository provides a comprehensive collection of example agent definitions, serving as a practical guide for developers, solution architects, and technical implementers. We address the common challenge of translating high-level business requirements into robust, declarative agent configurations. Each example is meticulously crafted to illustrate best practices, common architectural patterns, and advanced configuration techniques for various agent types.
+Within this repository, you will find:
+
+- **Agent Schema Implementations:** Demonstrations of how to define agent `parameters`, `capabilities`, `tooling`, and `workflow structures`.
+- **Integration Patterns:** Examples showcasing how agents can be integrated into existing CI/CD pipelines, orchestration layers, or custom applications via Optimizely's APIs.
+- **Practical Use Cases:** Configurations for agents performing tasks such as automated content generation, A/B test orchestration, real-time data analysis, and personalized experience delivery.
+
+Our objective is to demystify the agent definition process, offering readily adaptable templates that accelerate your development cycle and enhance the efficacy of your AI-driven initiatives. By exploring these examples, you will gain a deeper understanding of Opal Agent architecture, learn to articulate complex automation requirements in a structured, executable format, and ultimately, build more efficient and scalable AI solutions within Optimizely One.
