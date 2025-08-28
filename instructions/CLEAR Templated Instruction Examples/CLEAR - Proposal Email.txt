@@ -1,0 +1,12 @@
+Required inputs: company_name, topic
+
+(C) You are an SDR following up with a lead from {{company_name}} who attended our webinar on {{topic}}. The tone should be friendly and helpful.
+
+(L) Use this sequence: thanks → summary → link to asset → CTA.
+
+(E) Example:
+“Hi John, Thanks for joining our AI in Retail webinar yesterday. As promised, here’s the case study we discussed…”
+
+(A) Write a follow-up email of no more than 120 words with a subject line and call-to-action.
+
+(R) Check for correct recipient name, clear CTA, and no grammatical errors.
