@@ -1,0 +1,68 @@
+# Optimizely Opal Brand Colour Guidelines
+
+## Overview
+
+These guidelines define the official colour palette for Optimizely Opal, ensuring consistency and strengthening brand recognition across all digital and print materials. Adhering to these guidelines helps maintain a professional, cohesive, and impactful visual identity that reflects Optimizely's commitment to innovation and excellence in digital experience.
+
+---
+
+## 1. Core Principles
+
+**Clarity & Readability:** colours are chosen to ensure optimal readability and accessibility for all users, aligning with our approachable and insightful tone.
+
+**Brand Consistency:** The colour palette reinforces Optimizely's established brand identity while introducing the unique essence of Opal.
+
+**Impact & Engagement:** colours are selected to create a positive and engaging visual experience, reflecting our positive and professional brand personality.
+
+**Accessibility:** All colour combinations will meet or exceed WCAG 2.1 AA standards for contrast, ensuring inclusivity.
+
+---
+
+## 2. Primary colour Palette
+
+Our primary colours are the foundation of the Optimizely Opal brand, used for key elements such as logos, primary calls to action, and essential branding.
+
+| colour Name | Hex Code | RGB | CMYK | Usage |
+| --- | --- | --- | --- | --- |
+| **Optimizely Blue** | `#007bff` | `0, 123, 255` | `100, 62, 0, 0` | Main branding, primary CTAs, links |
+| **Opal Teal** | `#008080` | `0, 128, 128` | `100, 0, 0, 50` | Accent for Opal-specific elements, secondary branding |
+| **White** | `#FFFFFF` | `255, 255, 255` | `0, 0, 0, 0` | Backgrounds, text (on dark), clean spaces |
+| **Charcoal Grey** | `#343a40` | `52, 58, 64` | `19, 9, 0, 75` | Body text, subtle backgrounds, borders |
+
+---
+
+## 3. Secondary colour Palette
+
+The secondary palette complements our primary colours, offering versatility for data visualization, illustrations, and diverse content without overshadowing the core brand.
+
+| colour Name | Hex Code | RGB | CMYK | Usage |
+| --- | --- | --- | --- | --- |
+| **Success Green** | `#28a745` | `40, 167, 69` | `76, 0, 59, 35` | Success messages, positive indicators |
+| **Warning Yellow** | `#ffc107` | `255, 193, 7` | `0, 24, 97, 0` | Warnings, highlights, attention-grabbing elements |
+| **Danger Red** | `#dc3545` | `220, 53, 69` | `0, 76, 69, 14` | Error messages, critical alerts |
+| **Info Cyan** | `#17a2b8` | `23, 162, 184` | `87, 12, 0, 28` | Informational elements, subtle accents |
+| **Light Grey** | `#f8f9fa` | `248, 249, 250` | `1, 0, 0, 2` | Light backgrounds, dividers, subtle UI elements |
+
+---
+
+## 4. colour Usage Guidelines
+
+**Hierarchy:** Use primary colours for the most important elements to establish visual hierarchy. Secondary colours should support and enhance, not compete.
+
+**Contrast:** Always ensure sufficient contrast between text and background colours for readability, especially for users with visual impairments. Utilize tools to check WCAG compliance.
+
+**Consistency:** Apply colours consistently across all platforms and materials. This includes marketing collateral, product interfaces, presentations, and internal communications.
+
+**Purposeful Application:** Every colour choice should be intentional and serve a purpose, whether it's to guide the user, highlight information, or evoke a specific emotion. Avoid arbitrary colour usage.
+
+---
+
+## 5. Accessibility Considerations
+
+- Ensure a contrast ratio of at least 4.5:1 for small text and 3:1 for large text (18pt or 14pt bold).
+- Do not rely solely on colour to convey information. Use icons, text labels, or patterns as supplementary indicators.
+- Test colour palettes under various conditions, including different screen types and lighting.
+
+---
+
+By adhering to these Optimizely Opal Brand colour Guidelines, we ensure a unified, professional, and impactful visual presence that resonates with our audience and upholds our brand values.
