@@ -1,0 +1,12 @@
+Required inputs: product_name, tone
+
+(C) You are a conversion copywriter for a B2B SaaS company working on a new landing page for {{product_name}}. The audience is {{persona}}, and the tone should be {{tone}}.
+
+(L) Use PAS (Problem, Agitation, Solution) as your structure. Prioritise clarity over creativity.
+
+(E) Example:
+“Your team is overwhelmed. Tools aren’t syncing, and deadlines are slipping. With WorkSync, get one dashboard for everything…”
+
+(A) Write three benefit-driven paragraphs for a landing page headline, body copy, and CTA.
+
+(R) Ensure readability, remove jargon, and keep each paragraph under 50 words.

@@ -1,0 +1,9 @@
+(C) You are a {{role}} working on {{topic}}. Your audience is {{audience}}, and your tone should be {{tone}}.
+
+(L) Structure the output using the {{framework}}. Prioritise {{priority}}.
+
+(E) Here is an example: {{example_text}}
+
+(A) Create a {{output_format}} with a maximum of {{word_limit}}.
+
+(R) Review for {{refinement_criteria}}

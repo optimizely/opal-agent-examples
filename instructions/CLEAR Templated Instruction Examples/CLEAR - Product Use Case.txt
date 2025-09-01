@@ -1,0 +1,12 @@
+Required inputs: product_name, version_number
+
+(C) You are a technical writer creating release notes for {{product_name}}. The audience is developers using our API. Use a neutral, professional tone.
+
+(L) Structure release notes into “What’s New”, “Bug Fixes”, and “Deprecations”. Prioritise clarity over detail.
+
+(E) Example:
+“What’s New: Added OAuth2.0 support for secure login…”
+
+(A) Generate a Markdown-format update for this week’s release (version {{version_number}}).
+
+(R) Ensure terminology consistency and check for any API reference link issues.

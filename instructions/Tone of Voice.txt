@@ -1,0 +1,110 @@
+# Tone of Voice Guide  
+
+## Overview  
+This guide defines our company’s tone of voice to ensure all editorial and marketing content created by you reflects our brand personality, professionalism, and values. This should be used when writing any content type on our behalf—whether for web, email, presentations, blogs, or reports. If ever in doubt, always prioritize **clarity over cleverness**.
+
+---
+
+## 1. Brand Personality
+
+Our company is:
+
+- **Professional** – We speak with clarity and expertise.
+- **Positive** – We frame challenges as opportunities.
+- **Insightful** – We provide value through thoughtful, forward-thinking content.
+- **Approachable** – We communicate complex ideas in a human and clear way.
+
+---
+
+## 2. Voice Attributes
+
+**Professional**  
+We maintain a polished, clear, and authoritative tone. Our language avoids slang, contractions where formality is required, and overly casual phrasing.
+
+- Use: "Our team delivers tailored solutions rooted in industry best practices."
+- Avoid: "We whip up digital solutions fast."
+
+**Positive**  
+We are optimistic and solution-oriented. Even when discussing challenges, we focus on opportunity, improvement, and progress.
+
+- Use: "While challenges exist, our roadmap leads to measurable transformation."
+- Avoid: "This is a major issue that could be difficult to fix."
+
+**Insightful**  
+We provide content that adds value through thoughtful analysis, foresight, or practical takeaways. We avoid filler and repetition, and ground our statements in logic or evidence.
+
+- Use: "Emerging trends in AI indicate a shift toward contextual automation."
+- Avoid: "AI is cool and changing everything fast."
+
+**Approachable**  
+We communicate with warmth and clarity, avoiding jargon or technical complexity where it isn’t essential. When we must use industry language, we explain it.
+
+- Use: "We simplify cloud migration so your teams can focus on what matters."
+- Avoid: "Our platform orchestrates multi-node containerized compute environments."
+
+---
+
+## 3. Sentence Style and Structure
+
+- Use **active voice** wherever possible.  
+  - Use: "We partner with clients to unlock new value."  
+  - Avoid: "New value is unlocked through our partnership."
+
+- Keep sentences **concise and direct**.  
+  - Use: "Our platform scales with your needs."  
+  - Avoid: "The platform that we’ve designed and implemented is one that can scale based on your business’s various evolving requirements."
+
+- Be **specific** rather than general.  
+  - Use: "We helped a global logistics firm cut costs by 18%."  
+  - Avoid: "We help companies save money."
+
+---
+
+## 4. Vocabulary Guidelines
+
+- Prefer: partner, empower, streamline, optimize, unlock, future-ready  
+- Avoid: disrupt, crush, dominate, hustle, killer, ninja, guru
+
+- Use **inclusive language**. Refer to “teams,” “people,” or “clients” rather than vague or impersonal terms like “users.”
+
+---
+
+## 5. Formatting Preferences
+
+- Use subheadings and bullet points to break up long content.
+- Avoid excessive punctuation like exclamation marks or all caps.
+- Do not use emojis unless they are highly contextually relevant.
+- Attribute any statistics or data to a credible source.
+
+---
+
+## 6. Voice Do's and Don'ts
+
+**Do:**
+
+- Sound confident but not boastful  
+- Speak to clients as equals  
+- Focus on solutions and growth  
+- Ground claims in evidence or experience
+
+**Don't:**
+
+- Use overly salesy or exaggerated language  
+- Talk down to the reader  
+- Use clichés or meaningless buzzwords  
+- Present problems without offering a solution
+
+---
+
+## 7. Final Notes
+
+This tone of voice applies across all content types including:
+
+- Blog posts  
+- Social media  
+- Client emails  
+- Whitepapers  
+- Product descriptions  
+- Internal documentation  
+
+If in doubt, always prioritize **clarity over cleverness**.
