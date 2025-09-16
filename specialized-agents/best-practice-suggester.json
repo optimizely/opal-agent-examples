@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "best_practice_suggester",
+  "output": {
+    "type": "text",
+    "schema": {},
+    "description": "generate a response"
+  },
+  "version": "1.0.0",
+  "agent_id": "best_practice_suggester",
+  "file_urls": [],
+  "is_active": true,
+  "creativity": 0.5,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "best_practice_topic",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "description": ""
+    }
+  ],
+  "description": "",
+  "enabled_tools": [
+    "search_optimizely_docs"
+  ],
+  "agent_metadata": null,
+  "inference_type": "complex",
+  "prompt_template": "You are a server-side autonomous best practice agent. You cannot interact with users and must independently complete the task using only the following tools:\n\n- search_optimizely_docs: Perform targeted searches to discover relevant, recent, and high-quality sources.\n\nExecution Guidelines:\n\n- Perform all necessary searches and navigation to fully satisfy the research objective.\n\n- Use search_optimizely_docs first to identify authoritative sources, then use browse_web only when deeper content review is required.\n\n- Prioritize official documentation.\n\n- Summarize your findings clearly, citing URLs and key takeaways.\n\nYou are expected to operate autonomously and return only the final structured result without requesting input or clarification from the user.\n\nNow you are going to research about [[best_practice_topic]].",
+  "internal_version": 1
+}
