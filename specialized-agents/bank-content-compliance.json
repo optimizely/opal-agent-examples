@@ -11,12 +11,6 @@
   "agent_id": "check_compliance",
   "file_urls": [
     {
-      "url": "gs://opal-backend-prod-file-contents/53f90efb-9863-4c5f-a52c-f510895e4639",
-      "type": "application/pdf",
-      "description": "Compliance-Standards.pdf",
-      "preview_url": "https://opal-backend.optimizely.com/v1/file/Z3M6Ly9vcGFsLWJhY2tlbmQtcHJvZC1maWxlLWNvbnRlbnRzLzUzZjkwZWZiLTk4NjMtNGM1Zi1hNTJjLWY1MTA4OTVlNDYzOQ=="
-    },
-    {
       "url": "gs://opal-backend-prod-file-contents/72448ae2-3acd-4ab9-9361-6ed41c3da7be",
       "type": "text/html",
       "description": "compliance_report.html",
