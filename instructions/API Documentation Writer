@@ -1,0 +1,331 @@
+# API Documentation Writer
+
+**Required inputs:** endpoint_name, http_method, authentication_type, primary_use_case
+
+## Purpose
+Generate clear, developer-friendly API documentation for {{endpoint_name}} using {{http_method}} with {{authentication_type}} authentication. Designed to help developers integrate successfully on their first attempt, minimizing support tickets and implementation time.
+
+## Documentation Philosophy
+
+**Goal:** A developer should be able to make a successful API call within 5 minutes of reading your docs.
+
+**Principles:**
+1. **Show, don't just tell:** Every concept gets a code example
+2. **Start with the happy path:** Success case first, edge cases second
+3. **Be accurate:** Wrong docs are worse than no docs
+4. **Anticipate questions:** Address "why" not just "how"
+
+## Document Structure
+
+### 1. Endpoint Overview (Quick Reference)
+
+**Include at the top:**
+```
+POST /api/v1/{{endpoint_name}}
+
+Purpose: [One sentence describing what this endpoint does]
+
+Common use case: [When/why developers use this]
+
+Rate limit: [Requests per time period]
+
+Authentication: [Required authentication method]
+```
+
+### 2. Authentication Section
+
+**Explain how to authenticate:**
+- Where to include credentials (header, query param, body)
+- Format of authentication token/key
+- How to obtain credentials
+- Example of authenticated request
+
+**Example format:**
+```
+Authentication: Bearer Token
+
+Include your API key in the Authorization header:
+
+Authorization: Bearer YOUR_API_KEY
+
+To get an API key, visit your dashboard at https://app.example.com/settings/api
+```
+
+### 3. Request Format
+
+**Include:**
+- **HTTP method and full URL**
+- **Required headers**
+- **Path parameters** (if any)
+- **Query parameters** (if any)
+- **Request body schema** (with data types)
+- **Field descriptions** (what each field does)
+- **Validation rules** (min/max length, allowed values, etc.)
+
+**Use a table format:**
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `user_id` | string | Yes | Unique identifier for the user (max 50 chars) |
+| `email` | string | Yes | Valid email address |
+| `metadata` | object | No | Optional custom key-value pairs |
+
+### 4. Request Example (Most Important Section)
+
+**Provide working code examples in multiple languages:**
+
+Minimum: cURL
+Recommended: cURL + Python + JavaScript/Node.js
+
+**cURL example:**
+```bash
+curl -X POST https://api.example.com/v1/users \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": "usr_12345",
+    "email": "developer@example.com",
+    "metadata": {
+      "plan": "premium"
+    }
+  }'
+```
+
+**Requirements for examples:**
+- Use realistic, valid data (not "foo" or "test123")
+- Show actual header formatting
+- Include authentication
+- Format JSON properly (indented, readable)
+- Examples should be copy-pasteable (replace only API key)
+
+### 5. Response Format
+
+**Document the success response:**
+- **HTTP status code**
+- **Response body structure**
+- **Field descriptions**
+- **Data types**
+
+**Use actual example response:**
+```json
+{
+  "id": "usr_12345",
+  "email": "developer@example.com",
+  "created_at": "2025-10-28T14:32:00Z",
+  "status": "active"
+}
+```
+
+**Include response field table:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique user identifier |
+| `email` | string | User's email address |
+| `created_at` | string (ISO 8601) | Timestamp of user creation |
+| `status` | enum | User status: `active`, `pending`, or `suspended` |
+
+### 6. Error Responses
+
+**Document common errors with examples:**
+
+```json
+400 Bad Request - Missing required field
+{
+  "error": {
+    "code": "missing_field",
+    "message": "The 'email' field is required",
+    "field": "email"
+  }
+}
+
+401 Unauthorized - Invalid API key
+{
+  "error": {
+    "code": "invalid_auth",
+    "message": "Invalid or expired API key"
+  }
+}
+
+429 Too Many Requests - Rate limit exceeded
+{
+  "error": {
+    "code": "rate_limit_exceeded",
+    "message": "Rate limit of 100 requests per minute exceeded",
+    "retry_after": 45
+  }
+}
+```
+
+**Include:**
+- HTTP status code
+- Error response structure
+- What each error means
+- How to resolve it
+
+### 7. Additional Notes (Optional but valuable)
+
+**Consider including:**
+- Idempotency behavior
+- Pagination details (if list endpoint)
+- Filtering/sorting options
+- Webhooks related to this endpoint
+- Rate limiting specifics
+- Best practices or tips
+- Common gotchas or mistakes
+
+## Formatting Standards
+
+**Code formatting:**
+- Use syntax highlighting
+- Indent JSON with 2 spaces
+- Use backticks for inline code: `parameter_name`
+- Use code blocks for examples
+
+**Language:**
+- Use active voice: "Send a POST request" not "A POST request is sent"
+- Use "you": "You can filter results by..."
+- Be direct: "Required" not "This field is required if you want to..."
+
+**Data types:**
+Use standard types:
+- `string`, `integer`, `boolean`, `float`, `array`, `object`
+- For enums, list allowed values: `enum: ["active", "pending", "suspended"]`
+- For dates, specify format: `string (ISO 8601)`
+
+## Quality Checklist
+
+**Required elements:**
+- [ ] HTTP method and full URL clearly stated
+- [ ] Authentication method explained with example
+- [ ] All parameters documented (type, required/optional, description)
+- [ ] Working cURL example (copy-pasteable)
+- [ ] Success response example with field descriptions
+- [ ] At least 3 common error responses documented
+- [ ] Rate limiting information included
+
+**Readability checks:**
+- [ ] A developer could make a successful call in 5 minutes
+- [ ] No unexplained jargon or internal terminology
+- [ ] Examples use realistic data
+- [ ] Error messages explain how to resolve the issue
+- [ ] Code examples are formatted and highlighted
+
+## Example Output Structure
+
+```markdown
+# Create User
+
+POST /api/v1/users
+
+Create a new user account in your organization.
+
+**Common use case:** Creating user accounts during onboarding or signup flows
+
+**Rate limit:** 100 requests per minute
+
+**Authentication:** Bearer token required
+
+---
+
+## Authentication
+
+Include your API key in the Authorization header:
+
+Authorization: Bearer YOUR_API_KEY
+
+Get your API key from: https://app.example.com/settings/api
+
+---
+
+## Request
+
+### Headers
+- `Authorization: Bearer YOUR_API_KEY` (required)
+- `Content-Type: application/json` (required)
+
+### Body Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `email` | string | Yes | Valid email address (max 255 chars) |
+| `name` | string | Yes | User's full name (2-100 chars) |
+| `role` | enum | No | User role: `admin`, `member`, or `viewer`. Default: `member` |
+
+---
+
+## Example Request
+
+```bash
+curl -X POST https://api.example.com/v1/users \
+  -H "Authorization: Bearer sk_live_abc123..." \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "jane.doe@company.com",
+    "name": "Jane Doe",
+    "role": "member"
+  }'
+```
+
+---
+
+## Response
+
+**Status:** 201 Created
+
+```json
+{
+  "id": "usr_abc123",
+  "email": "jane.doe@company.com",
+  "name": "Jane Doe",
+  "role": "member",
+  "created_at": "2025-10-28T14:32:00Z",
+  "status": "active"
+}
+```
+
+### Response Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Unique user identifier |
+| `email` | string | User's email address |
+| `created_at` | string (ISO 8601) | Account creation timestamp |
+| `status` | enum | Account status: `active`, `pending`, or `suspended` |
+
+---
+
+## Errors
+
+**400 Bad Request** - Invalid or missing parameters
+```json
+{
+  "error": {
+    "code": "invalid_email",
+    "message": "The email address format is invalid",
+    "field": "email"
+  }
+}
+```
+
+**409 Conflict** - User already exists
+```json
+{
+  "error": {
+    "code": "user_exists",
+    "message": "A user with this email already exists",
+    "field": "email"
+  }
+}
+```
+
+---
+
+## Notes
+
+- Email addresses are case-insensitive and automatically lowercased
+- User creation is idempotent based on email address
+- New users receive a welcome email unless `send_welcome_email: false` is specified
+```
+
+---
+
+**Remember:** Developers will copy your examples. Make them correct, secure, and representative of real-world usage.
