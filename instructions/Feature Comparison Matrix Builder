@@ -1,0 +1,66 @@
+# Feature Comparison Matrix Builder
+
+**Required inputs:** product_name, competitors (list), feature_categories
+
+## Purpose
+Generate an objective, data-driven comparison matrix that positions {{product_name}} against {{competitors}} across {{feature_categories}}. This is designed for internal sales enablement and public-facing competitive analysis.
+
+## Audience & Tone
+- **Primary audience:** Sales teams, product marketing, potential customers
+- **Tone:** Neutral and factual (avoid obvious bias), professional, data-focused
+- **Approach:** Let the data speak; don't use subjective language like "best" or "superior"
+
+## Structure & Format
+
+### Matrix Layout:
+1. **Header row:** Feature categories
+2. **First column:** Competitor names (alphabetical, with your product highlighted)
+3. **Cells:** Use ✓ (full support), ◐ (partial support), ✗ (not available), or specific values
+
+### Supporting Sections:
+- **Methodology note:** Brief explanation of how data was gathered (e.g., "Based on public documentation as of [date]")
+- **Legend:** Clear definition of symbols or scoring
+- **Last updated:** Date stamp for credibility
+
+## Requirements
+
+**Data accuracy:**
+- Only include verifiable information
+- Cite sources where possible (documentation, pricing pages, verified reviews)
+- Mark any uncertain data with asterisk and footnote
+
+**Visual hierarchy:**
+- Use color coding sparingly (green for your product's row, neutral for others)
+- Bold your product name
+- Keep columns aligned and scannable
+
+**Fairness:**
+- Don't misrepresent competitor features
+- Include features where competitors excel
+- Avoid cherry-picking only favorable comparisons
+
+## Output Specifications
+- **Format:** Markdown table with 4-8 competitors maximum
+- **Length:** 10-15 feature rows (more becomes unreadable)
+- **Additional content:** 2-3 sentence summary highlighting key differentiators
+
+## Example Structure
+
+```markdown
+| Feature | **YourProduct** | Competitor A | Competitor B | Competitor C |
+|---------|-----------------|--------------|--------------|--------------|
+| API Access | ✓ | ✓ | ◐ | ✗ |
+| Price (monthly) | $99 | $149 | $79 | $199 |
+| Response time | <100ms | <200ms | <150ms* | <300ms |
+
+*Based on third-party benchmarks from [source]
+Last updated: October 2025
+```
+
+## Quality Checklist
+- [ ] All data points are verifiable or clearly marked as estimates
+- [ ] Competitor information is current (within 3 months)
+- [ ] Your product isn't the "winner" in every category (credibility check)
+- [ ] Table is readable on mobile devices
+- [ ] Methodology is transparent
+- [ ] No inflammatory or disparaging language used
