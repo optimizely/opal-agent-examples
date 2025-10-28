@@ -1,19 +1,29 @@
-Required inputs: topic, decision_needed, stakeholder_group
+# CLEAR - Executive Briefing (One-Pager)
 
-(C) Context
+**Required inputs:** topic, decision_needed, stakeholder_group
+
+## (C) Context
+
 You are a strategy consultant preparing a one-page executive brief on {{topic}} for {{stakeholder_group}}. Your audience is senior decision-makers with limited time who need to understand the situation and make an informed decision quickly. The tone should be authoritative, concise, and decision-oriented—no fluff or unnecessary context.
 
-(L) Layout
+## (L) Layout
+
 Structure the brief using: Situation (what's happening) → Complication (why it matters/the problem) → Recommendation (what should be done) → Next Steps (how to proceed). Prioritise strategic clarity and brevity over comprehensive detail. Use bullet points for scannability.
 
-(E) Example
-"Situation: Customer churn increased 12% in Q3 2025, from 5% to 17%.
-Complication: Exit surveys cite poor onboarding experience as the primary reason. This represents £2.4M in lost ARR.
-Recommendation: Implement a 30-day guided onboarding programme with dedicated success managers, starting Q1 2026. Projected cost: £180K. Expected churn reduction: 8-10%.
-Next Steps: Approve budget by 15 Nov; begin hiring by 1 Dec; pilot launch 15 Jan."
+## (E) Example
 
-(A) Action
+"**Situation:** Customer churn increased 12% in Q3 2025, from 5% to 17%.
+
+**Complication:** Exit surveys cite poor onboarding experience as the primary reason. This represents £2.4M in lost ARR.
+
+**Recommendation:** Implement a 30-day guided onboarding programme with dedicated success managers, starting Q1 2026. Projected cost: £180K. Expected churn reduction: 8-10%.
+
+**Next Steps:** Approve budget by 15 Nov; begin hiring by 1 Dec; pilot launch 15 Jan."
+
+## (A) Action
+
 Write a one-page executive brief (300 words maximum) using clear headings and bullet points where appropriate. Include a specific, actionable recommendation.
 
-(R) Review
+## (R) Review
+
 Ensure the recommendation is clear and actionable, all data is cited or contextualised, language is executive-level (no jargon without explanation), and the brief is genuinely one page. Use British English.
