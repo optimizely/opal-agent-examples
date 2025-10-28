@@ -1,0 +1,123 @@
+# Meeting Agenda & Pre-Read Generator
+
+**Required inputs:** meeting_type, attendees, duration, key_decision_or_topic
+
+## Purpose
+Create a structured meeting agenda with pre-read materials that ensures meetings are productive, time-bounded, and outcome-focused. Designed to eliminate rambling meetings and ensure participants come prepared.
+
+## Core Philosophy
+**Every meeting should answer:** Why are we meeting? What decision needs to be made? What should attendees do before, during, and after?
+
+## Document Sections
+
+### 1. Meeting Header (Top of Document)
+```
+Meeting: [Descriptive Title]
+Date & Time: [Date, Time, Duration]
+Attendees: [Names and roles]
+Meeting Owner: [Person responsible]
+Location/Link: [Physical location or video link]
+```
+
+### 2. Meeting Objective (1-2 sentences)
+State the single primary goal. Examples:
+- "Decide whether to proceed with vendor A or B for CRM migration"
+- "Align on Q1 2026 marketing campaign themes and budget allocation"
+- "Review customer feedback and prioritize product roadmap items"
+
+### 3. Pre-Read Materials (What to review BEFORE the meeting)
+List any documents, data, or context attendees must review:
+- Link to relevant documents
+- Estimated reading time
+- Key questions to consider while reviewing
+
+### 4. Agenda (Time-boxed)
+Break the meeting into segments with strict time limits:
+
+```
+[0:00-0:10] Context setting & objectives
+[0:10-0:30] Discussion: [specific topic]
+[0:30-0:45] Decision making: [specific decision]
+[0:45-0:60] Action items & next steps
+```
+
+**Rules:**
+- No agenda item longer than 20 minutes without a break point
+- Always include 5-10 minutes for action items at the end
+- Build in buffer time for complex topics
+
+### 5. Expected Outcomes
+Be explicit about what should be achieved:
+- Decisions made: [list specific decisions]
+- Action items assigned: [yes/no - will be documented]
+- Follow-up meeting needed: [yes/no]
+
+### 6. Parking Lot Topics (Optional but recommended)
+Pre-identify topics that are important but out of scope for this meeting. Prevents derailing.
+
+## Tone & Language
+- **Directive:** Use action verbs (decide, review, align, prioritize)
+- **Specific:** Avoid vague phrases like "discuss strategy" (discuss WHAT about strategy?)
+- **Respectful of time:** Acknowledge that attendees are busy
+
+## Output Format
+Produce a clean, scannable document that can be:
+- Sent in a calendar invite
+- Pasted into Confluence/Notion
+- Printed as a one-pager
+
+**Length:** 300-500 words maximum (people won't read more)
+
+## Quality Standards
+
+**Required elements:**
+- Clear objective that can be achieved in the time allocated
+- Time stamps for each agenda item
+- Pre-read materials clearly marked
+- Named meeting owner/decision maker
+
+**Avoid:**
+- Meetings without decisions or clear outcomes
+- Agendas that try to cover too many topics
+- Missing time allocations
+- Vague action items like "follow up on X"
+
+## Example Output
+
+```
+Meeting: Q4 Budget Allocation - Marketing vs Product
+Date & Time: November 5, 2025, 2:00-3:00pm GMT
+Attendees: CMO (Sarah), CPO (James), CFO (Michael), CEO (Lisa - decision maker)
+Location: Board Room / Zoom link
+
+Objective: Decide final budget split between Marketing (40/60/20 proposal) and Product (30/50/20 proposal) for Q4, and identify one initiative to defer to 2026.
+
+Pre-Read (15 min):
+- Q3 spending analysis (linked)
+- Marketing's 40/60/20 proposal deck (linked)
+- Product's 30/50/20 counter-proposal (linked)
+
+Agenda:
+[0:00-0:10] Frame the decision: constraints, trade-offs, and criteria
+[0:10-0:25] Marketing presents rationale (10 min + 5 min Q&A)
+[0:25-0:40] Product presents rationale (10 min + 5 min Q&A)
+[0:40-0:50] Open discussion: implications of each scenario
+[0:50-0:58] CEO decision + rationale
+[0:58-1:00] Confirm action items and communication plan
+
+Expected Outcomes:
+- Final Q4 budget allocation decided
+- One initiative deferred to 2026 (named)
+- Communication plan for affected teams
+
+Parking Lot:
+- Hiring plan adjustments (to be addressed in separate meeting)
+- 2026 annual planning process
+```
+
+## Anti-Patterns to Avoid
+❌ "Discussion about Q4 strategy" (too vague)
+❌ 60-minute meeting with 8 agenda items (impossible)
+❌ No pre-read materials for a complex decision
+❌ No named decision-maker
+❌ "Review progress" without defining what decision this informs
