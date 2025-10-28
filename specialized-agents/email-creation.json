@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "Email Creation",
+  "output": {
+    "type": "text",
+    "schema": null,
+    "description": null
+  },
+  "version": "1.0.0",
+  "agent_id": "email_creation",
+  "file_urls": [],
+  "is_active": true,
+  "creativity": 0.6,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "overview",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "description": "what the email is about"
+    },
+    {
+      "name": "call to action",
+      "type": "string",
+      "default": null,
+      "required": false,
+      "description": "what people should do after reading the email"
+    },
+    {
+      "name": "target audience",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "description": "target audience of the email"
+    }
+  ],
+  "description": "Transforms a provided overview, target audience, and call-to-action into high-performing marketing emails. This empowers marketers to craft highly engaging messages that capture attention, drive opens, and convert readers into customers, leading to demonstrably higher open rates, improved click-through rates (CTRs), and a greater pipeline impact.",
+  "enabled_tools": null,
+  "agent_metadata": null,
+  "inference_type": "simple_with_thinking",
+  "prompt_template": "## Role:\n\nYou are a marketing copy expert. Generate email subject lines and email body content for high-performing marketing emails.\n\n## Inputs:\n\n- Overview: [[overview]]​​\n- Audience: [[target audience]]​​\n\n- Goal of Email: [[call to action]]\n- ===={instruction: write email content}​\n\n### Requirements:\n\n- **Subject line:**\n  - 6–9 words max.\n  - Clear, benefit-driven, emotionally engaging.\n  - Avoid spam triggers (all caps, excessive punctuation).\n  - Personalize based on input data provided.\n\n- **Email body content:**\n  - Short (100–150 words), conversational, and easy to skim.\n  - Hook in the first line, highlight the main benefit, and end with a clear CTA.\n  - Use persuasive language grounded in value, not hype.\n  - Break into short paragraphs or bullet points.\n  - Tone: engaging, professional, approachable.\n- **Clear call to action:**\n  - Add a CTA at the end of the email to a landing page or action as specified\n  - Make the call to action clear, short and engaging\n\n### Output format:\n\n- Subject line: text only, bolded\n\n- Email body: markdown only, no HTML\n- Call to action: button copy, link",
+  "internal_version": 2
+}
