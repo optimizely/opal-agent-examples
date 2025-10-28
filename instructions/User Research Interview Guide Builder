@@ -1,0 +1,150 @@
+# User Research Interview Guide Builder
+
+**Required inputs:** research_goal, user_segment, product_or_feature_context
+
+## Purpose
+Generate a structured interview guide for qualitative user research that uncovers genuine insights rather than leading answers or confirming biases. Designed for product managers, UX researchers, and customer success teams conducting discovery interviews.
+
+## Core Research Principles
+
+**The Goal:** Understand the user's world, not validate your assumptions
+
+**Key Rules:**
+1. Ask about past behavior, not hypothetical future behavior ("Tell me about the last time you..." not "Would you use...")
+2. Ask "why" 3-5 times to get beneath surface answers
+3. Stay quiet after asking—let users think and fill silence
+4. Focus on the problem space before showing any solutions
+5. Record specific stories and examples, not generalizations
+
+## Interview Guide Structure
+
+### Part 1: Opening (5 minutes)
+**Purpose:** Build rapport and set expectations
+
+**Include:**
+- Thank the participant
+- Explain the purpose (learning about their experience, not testing them)
+- Get consent for recording (if applicable)
+- Set time expectations
+- Emphasize there are no right/wrong answers
+
+**Example opening:**
+"Thanks for taking the time today. I'm [name] and I'm trying to understand how [user segment] currently handles [problem area]. This isn't a test—I'm genuinely curious about your experience. We'll chat for about [duration], and everything you share will help us build better solutions. Is it okay if I record this for notes?"
+
+### Part 2: Context Setting (5-10 minutes)
+**Purpose:** Understand the user's role, environment, and baseline
+
+**Question types:**
+- Demographic/role questions (brief, not invasive)
+- "Walk me through your typical [day/week/workflow]"
+- "What does success look like in your role?"
+
+**Example questions:**
+- "Tell me about your role and main responsibilities."
+- "Walk me through a typical project from start to finish."
+- "Who else is involved in this process?"
+
+### Part 3: Problem Exploration (15-20 minutes)
+**Purpose:** Deep dive into the problem space with specific examples
+
+**Question framework:**
+1. **Behavioral:** "Tell me about the last time you [did X]..."
+2. **Probing:** "Why did you do it that way?" / "What happened next?"
+3. **Pain points:** "What was frustrating about that?" / "What would have made it easier?"
+4. **Current solutions:** "How do you handle that today?" / "What tools do you use?"
+5. **Workarounds:** "Have you found any tricks or shortcuts?"
+
+**Example question flow:**
+- "Tell me about the last time you needed to [specific task]."
+- "Walk me through exactly what you did, step by step."
+- "What made that difficult?"
+- "Why did you choose to [action] rather than [alternative]?"
+- "How often does this happen?"
+- "Have you tried other approaches? What happened?"
+
+### Part 4: Solution Validation (Optional, 10 minutes)
+**Only include if you have something to test—otherwise skip**
+
+**If testing a concept:**
+- Show, don't tell: Use mockups, prototypes, or examples
+- "What do you think this is for?"
+- "Talk me through how you'd use this."
+- "What's confusing or unclear?"
+- "How does this compare to how you do it today?"
+
+**Critical rule:** Present solution AFTER problem exploration, not before
+
+### Part 5: Closing (5 minutes)
+**Purpose:** Capture anything missed and leave on a positive note
+
+**Include:**
+- "Is there anything I didn't ask about that seems important?"
+- "What's the most frustrating thing about [problem area] that we haven't discussed?"
+- "Can I follow up if I have more questions?"
+- Thank them genuinely
+
+## Interview Guide Format
+
+**Output as:**
+- Numbered list of questions
+- Time allocations for each section
+- [PROBE] tags for follow-up questions
+- [NOTE] tags for interviewer reminders
+
+**Example format:**
+```
+SECTION 2: Context Setting (5-10 min)
+
+1. Tell me about your role and what your day-to-day looks like.
+   [PROBE: Who else do you work with? What tools do you use most?]
+
+2. Walk me through your workflow when [specific scenario].
+   [NOTE: Listen for pain points, don't rush to next question]
+   [PROBE: Why do you do it in that order?]
+```
+
+## Quality Standards
+
+**A good interview guide:**
+- Has 8-12 primary questions (not 30)
+- Focuses on one clear research goal
+- Asks about real behavior, not opinions or hypotheticals
+- Builds from general to specific
+- Includes probe questions for going deeper
+- Has time allocations
+- Leaves room for unexpected insights
+
+**Red flags to avoid:**
+- Leading questions ("Don't you think X is frustrating?")
+- Hypothetical questions ("Would you pay $50 for this?")
+- Yes/no questions that don't lead to follow-ups
+- Asking about features before understanding problems
+- Too many questions (you'll rush and get surface answers)
+
+## Output Specifications
+- **Format:** Markdown document with clear sections
+- **Length:** 12-15 primary questions across 4-5 sections
+- **Duration:** Designed for 30-45 minute interviews
+- **Tone:** Conversational question phrasing, not formal survey language
+
+## Example Question Patterns
+
+**Good:**
+- "Tell me about the last time you struggled with [task]."
+- "Walk me through how you currently handle [situation]."
+- "Why did you choose that approach?"
+
+**Bad:**
+- "Do you find [feature] useful?" (leading, yes/no)
+- "Would you use our new [solution]?" (hypothetical)
+- "On a scale of 1-10..." (quantitative, wrong format)
+
+## Adaptation Notes
+
+**For different research goals:**
+- **Discovery:** Focus entirely on problem exploration, no solution validation
+- **Usability testing:** Brief context, then 80% solution validation with tasks
+- **Feature prioritization:** Ask about frequency, impact, and current workarounds
+- **Retention/churn:** Focus on adoption journey, disappointments, and alternatives considered
+
+Always customize the guide to your specific research goal rather than using a generic template.
