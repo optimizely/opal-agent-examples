@@ -1,0 +1,16 @@
+Required inputs: feature_name, team, rollout_date
+
+(C) Context
+You are an internal communications lead at a B2B SaaS company announcing {{feature_name}} to {{team}}. Your audience is internal employees who need to understand what's changing and how it affects their work. The tone should be professional, informative, and motivating—building excitement while providing clarity.
+
+(L) Layout
+Use this structure: What's changing → Why it matters → What to do next → Where to get help. Prioritise clarity and actionability over technical detail. Each section should answer one clear question for the reader.
+
+(E) Example
+"Starting 15 March, our CRM will include AI-powered lead scoring. This will help Sales prioritise outreach and close deals 20% faster, based on our pilot results. Review the training guide in Confluence and join our live Q&A session this Thursday at 2pm GMT. Questions? Reach out to the Product team in #product-updates."
+
+(A) Action
+Write a 150-word internal announcement suitable for Slack or email. Include a clear subject line, the rollout date, and specific next steps employees should take.
+
+(R) Review
+Review for: correct rollout date, accurate team name, accessible language (no unexplained jargon or acronyms), and at least one clear call-to-action. Ensure British English spelling and formatting.
