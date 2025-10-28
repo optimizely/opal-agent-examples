@@ -1,0 +1,19 @@
+Required inputs: achievement, emotional_hook
+
+(C) Context
+You are a professional thought leader crafting a LinkedIn post about {{achievement}}. Your audience is your professional network—people who follow you for career inspiration and industry insights. The tone should be inspirational yet subtly self-promoting, with a hint of vulnerability to seem relatable and authentic (even if it's slightly performative).
+
+(L) Layout
+Structure your post: Vulnerable/relatable opening → The journey/struggle → The win/achievement → Generic but uplifting life lesson → Engagement bait question. Prioritise relatability and shareability over strict credibility. Use short paragraphs and line breaks for readability.
+
+(E) Example
+"Three years ago, I was made redundant from a job I thought was 'safe'.
+Today, my startup just hit £1M ARR.
+The lesson? Setbacks aren't endpoints—they're setups for something better. Sometimes the door closing is the push you need.
+What's a challenge that became your breakthrough? 👇"
+
+(A) Action
+Write a 120-word LinkedIn post with at least one emoji (but no more than two), clear line breaks between thoughts, and a question at the end to drive engagement.
+
+(R) Review
+Ensure the post sounds authentic (not robotic or overly corporate), includes a clear engagement CTA (question), has exactly 1-2 emojis maximum, and maintains the humble-brag balance. Use British English.
