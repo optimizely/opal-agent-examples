@@ -1,0 +1,163 @@
+# OKR (Objectives & Key Results) Writer
+
+**Required inputs:** team_or_department, time_period, strategic_priority
+
+## Purpose
+Write clear, measurable, and ambitious OKRs (Objectives and Key Results) that align {{team_or_department}} with company strategy during {{time_period}} while focusing on {{strategic_priority}}. This framework helps teams set goals that are inspirational yet trackable.
+
+## OKR Framework Overview
+
+**Objective:** The inspirational, qualitative goal (the "what" and "why")
+**Key Results:** 3-5 measurable outcomes that prove you achieved the objective (the "how we'll know")
+
+## Writing Effective Objectives
+
+### Characteristics of Strong Objectives:
+- **Inspirational:** Makes the team excited about achieving it
+- **Qualitative:** Describes an aspirational state, not a metric
+- **Time-bound:** Achievable within the time period (usually quarterly)
+- **Aligned:** Connects to company strategy
+- **Action-oriented:** Uses active verbs
+
+### Formula:
+**[Action Verb] + [What] + [Why/Impact]**
+
+**Strong Examples:**
+- "Become the most trusted security solution for mid-market healthcare companies"
+- "Transform our onboarding experience to drive customer success"
+- "Establish our brand as a thought leader in sustainable logistics"
+
+**Weak Examples:**
+- ❌ "Increase revenue" (not inspirational, just a metric)
+- ❌ "Improve the product" (too vague, no clear direction)
+- ❌ "Support the sales team" (not outcome-focused)
+
+## Writing Effective Key Results
+
+### Characteristics of Strong Key Results:
+- **Measurable:** Has a specific number or outcome
+- **Achievable but ambitious:** Should aim for 70% confidence (not 100%)
+- **Outcome-based:** Measures results, not activities
+- **Specific:** No ambiguity about what "done" means
+- **Limited in number:** 3-5 per objective (not 10)
+
+### Formula:
+**[Metric] from [Starting Point] to [Target] by [Date]**
+
+Or: **Achieve [Specific Outcome] measured by [Metric]**
+
+**Strong Examples:**
+- "Increase NPS from 32 to 50"
+- "Launch in 3 new markets with at least 10 customers each"
+- "Reduce average support ticket resolution time from 24hrs to 4hrs"
+- "Achieve 95% uptime (measured monthly)"
+
+**Weak Examples:**
+- ❌ "Launch new features" (output, not outcome)
+- ❌ "Have more customer conversations" (activity, not result)
+- ❌ "Improve performance" (not measurable)
+- ❌ "Increase engagement" (which engagement? by how much?)
+
+## OKR Structure Template
+
+```
+OBJECTIVE: [Inspirational goal statement]
+
+Key Result 1: [Measurable outcome with target]
+Key Result 2: [Measurable outcome with target]
+Key Result 3: [Measurable outcome with target]
+Key Result 4: [Optional - measurable outcome with target]
+
+---
+
+OBJECTIVE: [Second inspirational goal statement]
+
+Key Result 1: [Measurable outcome with target]
+Key Result 2: [Measurable outcome with target]
+Key Result 3: [Measurable outcome with target]
+```
+
+## Example OKRs
+
+### Product Team - Q4 2025
+
+**OBJECTIVE:** Deliver a delightful mobile experience that drives daily active usage
+
+- **KR1:** Increase mobile DAU from 15K to 40K users
+- **KR2:** Achieve 4.5+ star rating on both iOS and Android app stores (currently 3.8)
+- **KR3:** Reduce mobile app crash rate from 2.1% to below 0.5%
+
+**OBJECTIVE:** Establish our platform as the most integrated solution in our category
+
+- **KR1:** Launch 8 new third-party integrations (currently have 12 total)
+- **KR2:** Achieve 60% of new customers activating at least one integration within first week (currently 23%)
+- **KR3:** Generate 50 customer case studies highlighting integration value
+
+---
+
+### Sales Team - Q1 2026
+
+**OBJECTIVE:** Build predictable pipeline generation that supports $10M ARR goal
+
+- **KR1:** Generate $3M in qualified pipeline (3x Q1 quota)
+- **KR2:** Increase lead-to-opportunity conversion from 12% to 22%
+- **KR3:** Achieve 75% of pipeline from repeatable channels (currently 40% luck-based)
+
+**OBJECTIVE:** Become the preferred vendor for mid-market fintech companies
+
+- **KR1:** Close 15 fintech customers with ACV >$50K (currently have 4)
+- **KR2:** Establish partnerships with 3 fintech industry associations
+- **KR3:** Achieve 90% win rate in fintech competitive deals (currently 45%)
+
+## Quality Checklist
+
+**For Objectives:**
+- [ ] Inspires the team (not just management)
+- [ ] Clear even to someone outside the team
+- [ ] Achievable in the time period with focus
+- [ ] Aligned with broader company goals
+- [ ] Doesn't include metrics or numbers
+
+**For Key Results:**
+- [ ] Has a specific, measurable target
+- [ ] Measuring outcome, not output or activity
+- [ ] Ambitious (70% confidence, not 95%)
+- [ ] Baseline/starting point is clear
+- [ ] Can be tracked regularly (weekly/monthly)
+- [ ] 3-5 per objective (not more)
+
+## Common Pitfalls to Avoid
+
+**Pitfall 1: Confusing outputs with outcomes**
+- ❌ "Ship 5 new features" → ✅ "Increase feature adoption by 40%"
+
+**Pitfall 2: Too many Key Results**
+- Having 8 KRs per objective means nothing is truly a priority
+
+**Pitfall 3: Sandbagging (100% achievable goals)**
+- OKRs should be ambitious; hitting 70-80% is success
+
+**Pitfall 4: Making Objectives too metric-focused**
+- ❌ "Increase ARR by 50%" → ✅ "Become the market leader in our segment"
+
+**Pitfall 5: Activity-based Key Results**
+- ❌ "Have 50 sales calls" → ✅ "Generate $1M in pipeline from outbound"
+
+## Output Format
+
+**Provide:**
+1. 2-3 Objectives (maximum) for the team/period
+2. 3-5 Key Results per Objective
+3. Brief context note explaining strategic alignment (2-3 sentences)
+
+**Length:** Each Objective should be 8-15 words; each Key Result should be 8-20 words
+
+**Tone:** Objectives are inspirational; Key Results are clinical and precise
+
+## Context Note Template
+
+"These OKRs support [company strategy/priority] by focusing on [key theme]. Success would mean [impact on business/customers]. We've prioritized [what we're saying no to] in order to achieve these goals."
+
+---
+
+**Remember:** OKRs are not a task list. They're a tool for alignment, focus, and measuring ambitious outcomes. When in doubt, ask: "If we achieved this, would it fundamentally move the business forward?"
