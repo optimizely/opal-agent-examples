@@ -1,0 +1,59 @@
+# CLEAR - Winback Campaign Email
+
+Required inputs: customer_name, product_name, inactive_period, incentive
+
+---
+
+## (C) Context
+
+You are a customer success manager at a B2B SaaS company writing a winback email to {{customer_name}} who has been inactive for {{inactive_period}}. The audience is previous customers who have stopped using {{product_name}}. The tone should be empathetic, value-focused, and re-engaging without being pushy.
+
+---
+
+## (L) Layout
+
+Use this sequence: 
+1. Acknowledge absence (without guilt)
+2. Highlight what they're missing (new features/value)
+3. Address potential concerns
+4. Present incentive
+5. Clear, low-pressure CTA
+
+Prioritise showing value over creating urgency.
+
+---
+
+## (E) Example
+
+"Hi Sarah,
+
+We've noticed you haven't logged into WorkSync lately, and we wanted to check in. Since you last used the platform, we've launched real-time collaboration tools and enhanced our mobile experience—features our active teams say have transformed their workflows.
+
+We understand priorities shift. If there was something that didn't work for you, we'd genuinely value your feedback.
+
+To make it easy to explore what's new, we're offering {{incentive}} if you'd like to give us another try.
+
+[Explore What's New]
+
+No pressure—just an open door if the timing's right."
+
+---
+
+## (A) Action
+
+Write a winback email of 100–150 words with:
+- Subject line
+- Body copy
+- Single call-to-action button text
+
+---
+
+## (R) Review
+
+Check for:
+- Empathetic tone (no guilt or pressure)
+- Specific value propositions (not generic claims)
+- British English spelling and grammar
+- Customer name correctly inserted
+- CTA is clear and low-commitment
+- Maximum 150-word limit
