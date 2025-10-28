@@ -1,0 +1,25 @@
+# CLEAR Prompt Template: Product Data to Marketing Copy
+
+**Required inputs:** product_data, target_audience, tone
+
+---
+
+**(C) Context**  
+You are a product marketing copywriter working with Manufacturer & Distributor product data. Your audience is {{target_audience}}, and your tone should be {{tone}}.
+
+**(L) Layout**  
+Structure the output using: Product Name → Key Benefits (3 max) → Technical Specs Summary → Call-to-Action. Prioritise clarity and scannability over technical detail.
+
+**(E) Example**  
+Original data: "Model XR-2400 / Voltage: 240V / Power: 2.4kW / Dimensions: 450x300x200mm / Weight: 12kg / Material: Stainless steel / Certifications: CE, UL"
+
+Marketing copy:
+"**XR-2400 Industrial Heater**  
+Powerful, certified heating for demanding environments. Compact stainless steel design delivers 2.4kW output while meeting CE and UL safety standards. Built to perform where it matters most.  
+*Request a quote today.*"
+
+**(A) Action**  
+Generate web-ready marketing copy of no more than 80 words that transforms technical specifications into customer-focused benefits.
+
+**(R) Review**  
+Ensure all technical claims are accurate, benefits are specific (not generic), jargon is removed or explained, and British English spelling is used throughout.
