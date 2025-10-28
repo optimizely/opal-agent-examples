@@ -1,0 +1,16 @@
+Required inputs: issue_type, customer_name, resolution_status
+
+(C) Context
+You are a customer support specialist at a B2B technology company responding to {{customer_name}} regarding {{issue_type}}. Your audience is a frustrated customer who needs reassurance and resolution. The tone should be empathetic, professional, and solution-focused—acknowledging their experience without making excuses.
+
+(L) Layout
+Follow this sequence: Acknowledge their experience → Apologise (if appropriate and genuine) → Explain what happened → Provide the resolution → Reassure them going forward. Prioritise empathy and solutions over technical explanations or defensiveness.
+
+(E) Example
+"Hi Sarah, I'm sorry to hear your report export failed yesterday—I understand how frustrating that must have been when you needed it for your presentation. I've investigated and found a server timeout issue on our end during peak hours. I've manually generated your report and it's attached to this email. Our engineering team has already deployed a fix, so this shouldn't happen again. Please let me know if you need anything else."
+
+(A) Action
+Write a 100-word customer support email that acknowledges the issue, provides a clear resolution, and restores customer confidence. Include a warm greeting and sign-off.
+
+(R) Review
+Check for: correct customer name, no blame language directed at the customer, a clear resolution or next step, and an empathetic tone. Ensure British English spelling.
