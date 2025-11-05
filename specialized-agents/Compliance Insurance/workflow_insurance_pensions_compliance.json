@@ -1,0 +1,376 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "workflow",
+  "name": "Insurance & Pensions Compliance Checker",
+  "description": "Workflow that checks insurance and pension content for compliance against global regulations either by being given a region or by detecting the correct region",
+  "version": "",
+  "agent_id": "insurance_compliance_checker",
+  "objective": "",
+  "plan": "",
+  "is_active": true,
+  "is_deleted": false,
+  "agent_metadata": {
+    "nodes": [
+      {
+        "id": "2b23403a-9144-4bc9-8582-0dce96792d32",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 585,
+          "y": -15
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-ezqs1x",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1035,
+          "y": 675
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-87gp34",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1065,
+          "y": 30
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-v4sysw",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1125,
+          "y": 825
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-f0g3cl",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1050,
+          "y": 375
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-dj0d49",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1065,
+          "y": -150
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-fcoz4s",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1230,
+          "y": 960
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-jr909y",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1050,
+          "y": 525
+        }
+      },
+      {
+        "id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75-condition-wqcvhl",
+        "measured": {
+          "width": 248,
+          "height": 92
+        },
+        "position": {
+          "x": 1048,
+          "y": 212
+        }
+      },
+      {
+        "id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1980,
+          "y": -195
+        }
+      },
+      {
+        "id": "26af6877-5085-4766-9a73-620e390d4eb8",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1590,
+          "y": 525
+        }
+      },
+      {
+        "id": "77469c33-7a5b-46ae-a4b9-c26edcb74e1c",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1590,
+          "y": -150
+        }
+      },
+      {
+        "id": "5ff0b802-b643-4097-b43e-4db5c165a606",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1590,
+          "y": 705
+        }
+      },
+      {
+        "id": "350bf4df-57cb-4029-8008-07486d2eeb9f",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1590,
+          "y": 855
+        }
+      },
+      {
+        "id": "1930dcc8-8426-406b-9e07-4550b5e14553",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1590,
+          "y": 30
+        }
+      },
+      {
+        "id": "a5650e0e-d580-42eb-bece-0ae17376890e",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1590,
+          "y": 375
+        }
+      },
+      {
+        "id": "fa74549d-98f0-4ba3-ac31-04be5270b4c1",
+        "measured": {
+          "width": 248,
+          "height": 108
+        },
+        "position": {
+          "x": 1588,
+          "y": 203
+        }
+      }
+    ]
+  },
+  "internal_version": 18,
+  "steps": [
+    {
+      "step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "step_type": "specialized",
+      "name": "Insurance Output Agent",
+      "description": "Takes the input of global_json and product_json and outputs the results",
+      "agent_id": "compliance_insurance_output",
+      "parameters_schema": {},
+      "next_step_id": null,
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "26af6877-5085-4766-9a73-620e390d4eb8",
+      "step_type": "specialized",
+      "name": "Motor Insurance Compliance Checker",
+      "description": "Reviews provided content and checks it against motor insurance compliance rules. Check motor insurance content for compliance",
+      "agent_id": "compliance_motor_insurance",
+      "parameters_schema": {},
+      "next_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "77469c33-7a5b-46ae-a4b9-c26edcb74e1c",
+      "step_type": "specialized",
+      "name": "Health Insurance Compliance",
+      "description": "Reviews provided content and checks it against health insurance compliance rules. Check health insurance content for compliance",
+      "agent_id": "compliance_health_insurance",
+      "parameters_schema": {},
+      "next_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "5ff0b802-b643-4097-b43e-4db5c165a606",
+      "step_type": "specialized",
+      "name": "Commercial Insurance Compliance Checker",
+      "description": "Reviews provided content and checks it against commercial insurance compliance rules. Check commercial insurance content for compliance",
+      "agent_id": "compliance_commercial_insurance",
+      "parameters_schema": {},
+      "next_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "350bf4df-57cb-4029-8008-07486d2eeb9f",
+      "step_type": "specialized",
+      "name": "Property Insurance Compliance Checker",
+      "description": "Reviews provided content and checks it against property insurance compliance rules. Check property insurance content for compliance",
+      "agent_id": "compliance_property_insurance",
+      "parameters_schema": {},
+      "next_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "1930dcc8-8426-406b-9e07-4550b5e14553",
+      "step_type": "specialized",
+      "name": "Pensions Compliance",
+      "description": "Reviews provided content and checks it against health insurance compliance rules. Check health insurance content for compliance",
+      "agent_id": "compliance_pensions",
+      "parameters_schema": {},
+      "next_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "a5650e0e-d580-42eb-bece-0ae17376890e",
+      "step_type": "specialized",
+      "name": "Travel Insurance Compliance Checker",
+      "description": "Reviews provided content and checks it against travel insurance compliance rules. Check travel insurance content for compliance",
+      "agent_id": "compliance_travel_insurance",
+      "parameters_schema": {},
+      "next_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "fa74549d-98f0-4ba3-ac31-04be5270b4c1",
+      "step_type": "specialized",
+      "name": "Life Insurance Compliance",
+      "description": "Reviews content and checks it against Life insurance compliance rules globally.",
+      "agent_id": "compliance_life_insurance",
+      "parameters_schema": {},
+      "next_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+      "timeout_seconds": 3600
+    },
+    {
+      "step_id": "38f0af35-c061-4bf9-9ae3-fb6f2197bd75",
+      "step_type": "conditional",
+      "name": "Global Foundations Compliance",
+      "description": "Reviews provided content and checks it against health insurance compliance rules. Check health insurance content for compliance",
+      "evaluator_agent_id": "compliance_insurance_baseline",
+      "parameters_schema": null,
+      "conditions": [
+        {
+          "matching_condition": "property",
+          "match_type": "contains",
+          "target_step_id": "350bf4df-57cb-4029-8008-07486d2eeb9f",
+          "priority": 0
+        },
+        {
+          "matching_condition": "Travel",
+          "match_type": "contains",
+          "target_step_id": "a5650e0e-d580-42eb-bece-0ae17376890e",
+          "priority": 0
+        },
+        {
+          "matching_condition": "commercial",
+          "match_type": "contains",
+          "target_step_id": "5ff0b802-b643-4097-b43e-4db5c165a606",
+          "priority": 0
+        },
+        {
+          "matching_condition": "Health",
+          "match_type": "equals",
+          "target_step_id": "77469c33-7a5b-46ae-a4b9-c26edcb74e1c",
+          "priority": 0
+        },
+        {
+          "matching_condition": "Pensions",
+          "match_type": "contains",
+          "target_step_id": "1930dcc8-8426-406b-9e07-4550b5e14553",
+          "priority": 0
+        },
+        {
+          "matching_condition": "motor",
+          "match_type": "contains",
+          "target_step_id": "26af6877-5085-4766-9a73-620e390d4eb8",
+          "priority": 0
+        },
+        {
+          "matching_condition": "Direct",
+          "match_type": "equals",
+          "target_step_id": "3498ae19-f518-41cf-85d2-b75f8ce5d551",
+          "priority": 0
+        },
+        {
+          "matching_condition": "Life",
+          "match_type": "contains",
+          "target_step_id": "fa74549d-98f0-4ba3-ac31-04be5270b4c1",
+          "priority": 0
+        }
+      ],
+      "timeout_seconds": 3600
+    }
+  ],
+  "specialized_agents_required": [
+    "compliance_life_insurance",
+    "compliance_motor_insurance",
+    "compliance_pensions",
+    "compliance_property_insurance",
+    "compliance_commercial_insurance",
+    "compliance_insurance_baseline",
+    "compliance_health_insurance",
+    "compliance_travel_insurance",
+    "compliance_insurance_output"
+  ],
+  "triggers": [
+    {
+      "trigger_id": "2b23403a-9144-4bc9-8582-0dce96792d32",
+      "trigger_type": "message",
+      "name": "Chat Input",
+      "description": "Trigger when user sends a message",
+      "is_active": true
+    }
+  ]
+}
