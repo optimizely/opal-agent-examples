@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "Content Summary",
+  "output": {
+    "type": "text",
+    "schema": null,
+    "description": null
+  },
+  "version": "1.0.0",
+  "agent_id": "content_summary",
+  "file_urls": [],
+  "is_active": true,
+  "creativity": 0.5,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "file",
+      "type": "file",
+      "default": null,
+      "required": false,
+      "description": "file to summarize"
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "default": null,
+      "required": false,
+      "description": "content to summarize"
+    }
+  ],
+  "description": "Efficiently summarizes lengthy documents and PDFs, extracting key points from complex content. This empowers teams and decision-makers to quickly grasp essential information, saving valuable time and accelerating decision-making.",
+  "enabled_tools": [
+    "browse_web"
+  ],
+  "agent_metadata": null,
+  "inference_type": "simple_with_thinking",
+  "prompt_template": "**Context:** You have been provided with either [[file]]​ or [[content]]​ to summarize. Summarizing this content will help stakeholders quickly understand the key findings and implications without having to read the entire paper.\n\n**Tasks:**\n\n1. Carefully read the provided content, paying attention to each section to capture the main ideas and significant details.\n2. Provide a succinct summary that includes an overview of the purpose of the content, key findings, and any recommendations made by the authors.\n3. Ensure that your summary maintains the original intent and meaning of the content but is comprehensible to a lay audience.\n4. Limit the summary to a maximum of 300 words.\n5. Use clear language.\n\n**Output format:**\n\n- Begin with a title: \"Summary of [Document Title]\"\n\n- Follow with a brief introduction stating the aim of the content.\n\n- Proceed to list the main findings clearly.\n\n- Conclude with the authors' recommendations if applicable.\n\n**Example of Expected Summary Format:**\n\n==Summary of [Example Title]==\n\n==This study aims to [insert aim]. The main findings include (1) [finding one], (2) [finding two], and (3) [finding three]. The authors recommend [insert recommendation].\"==  \n\n**Quality Criteria:**\n\n- **Clarity: **The summary should be easy to understand without technical jargon.\n- **Conciseness: **The summary must be within the word limit and avoid unnecessary information.\n- **Accuracy: **The information summarized must reflect the key points from the input content accurately.",
+  "internal_version": 1
+}
