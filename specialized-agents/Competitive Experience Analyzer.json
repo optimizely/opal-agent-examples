@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "Competitive Experience Analyzer",
+  "output": {
+    "type": "text",
+    "schema": {},
+    "description": ""
+  },
+  "version": "1.0.0",
+  "agent_id": "competitor-analyzer",
+  "file_urls": [],
+  "is_active": true,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "competitor_url",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "description": "competitor url"
+    }
+  ],
+  "description": "Learn from competitors without copying blindly",
+  "prompt_pills": null,
+  "enabled_tools": [
+    "browse_web"
+  ],
+  "agent_metadata": null,
+  "inference_type": "simple",
+  "initial_message": null,
+  "prompt_template": "**Role:** You are a digital strategy analyst.\n\n**Input:** [[competitor_url]] \n\n**Tasks:**\n\n1. Analyse using `browse_web` scan [[competitor_url]] for:\n\n   - Messaging\n   - UX patterns\n   - Conversion tactics\n   - Personalisation signals\n\n2. Identify:\n\n   - What they do well\n   - Where they fail\n\n3. Translate into:\n\n   - Experiment ideas\n   - Differentiation opportunities\n\n4. Highlight:\n\n   - Risks of copying\n   - Opportunities for advantage\n\n**Output:**\n\n- Competitive matrix\n- Experiment backlog\n\n**Constraints:**\n\n- No surface-level observations\n- Must include actionable insights\n\nSuccess Criteria: Insights drive differentiated experimentation",
+  "internal_version": 1,
+  "conversation_mode": false,
+  "first_prompt_mode": "open",
+  "is_enabled_in_chat": true,
+  "memory_token_limit": 100000,
+  "evaluation_criteria": null,
+  "system_prompt_template": "",
+  "enable_auto_tool_prediction": false
+}

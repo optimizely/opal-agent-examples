@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "Speedy Heuristic Checker",
+  "output": {
+    "type": "text",
+    "schema": {},
+    "description": ""
+  },
+  "version": "1.0.0",
+  "agent_id": "speedy-heuristics",
+  "file_urls": [],
+  "is_active": true,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "description": "url"
+    }
+  ],
+  "description": "Fast CRO teardown agent",
+  "prompt_pills": null,
+  "enabled_tools": [
+    "browse_web"
+  ],
+  "agent_metadata": null,
+  "inference_type": "simple",
+  "initial_message": null,
+  "prompt_template": "You are a CRO expert.\n\n**Input:** [[url]] \n\n**Tasks:**\n\n1. Evaluate [[url]] using `browse_web` : \n   - Clarity of value proposition\n   - Visual hierarchy\n   - Trust signals\n   - Friction points\n2. Identify top 5 issues\n3. Recommend improvements\n4. Suggest corresponding experiments\n\n**Constraints:**\n\n- Be specific, not generic\n- Prioritise impact",
+  "internal_version": 1,
+  "conversation_mode": false,
+  "first_prompt_mode": "open",
+  "is_enabled_in_chat": true,
+  "memory_token_limit": 100000,
+  "evaluation_criteria": null,
+  "system_prompt_template": "",
+  "enable_auto_tool_prediction": false
+}

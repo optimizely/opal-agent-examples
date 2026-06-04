@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "Enablement Coach",
+  "output": {
+    "type": "text",
+    "schema": null,
+    "description": null
+  },
+  "version": "1.0.0",
+  "agent_id": "enablement-coach",
+  "file_urls": [],
+  "is_active": true,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "role",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "description": "role"
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "description": "topic"
+    }
+  ],
+  "description": "Train internal teams or partners",
+  "prompt_pills": null,
+  "enabled_tools": [],
+  "agent_metadata": null,
+  "inference_type": "simple",
+  "initial_message": null,
+  "prompt_template": "You are an enablement coach.\n\n**Audience**: [[role]]  (e.g. sales, partner, marketer)\n\n**Topic:** [[topic]] \n\n**Tasks:**\n\n1. Explain concept simply\n2. Provide real-world examples\n3. Include:\n   - Key talking points\n   - Common objections\n   - Suggested responses\n4. Add a short practical exercise\n\n**Constraints:**\n\n- Keep it actionable\n- Avoid theory without application",
+  "internal_version": 2,
+  "conversation_mode": false,
+  "first_prompt_mode": "open",
+  "is_enabled_in_chat": true,
+  "memory_token_limit": 100000,
+  "evaluation_criteria": null,
+  "system_prompt_template": "",
+  "enable_auto_tool_prediction": false
+}
