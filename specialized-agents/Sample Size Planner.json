@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "SGC Sample Size Planner",
+  "output": {
+    "type": "text",
+    "schema": null,
+    "description": "Returns sample size per variation, inputs used, simplified math, assumptions, and references."
+  },
+  "version": "1.0.0",
+  "agent_id": "SampleSizePlanner",
+  "file_urls": [],
+  "is_active": true,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "baseline_rate",
+      "type": "number",
+      "default": null,
+      "required": true,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Baseline conversion rate as a percentage. Example: 3"
+    },
+    {
+      "name": "relative_mde",
+      "type": "number",
+      "default": null,
+      "required": true,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Minimum detectable effect as a relative percentage. Example: 15"
+    },
+    {
+      "name": "significance_level",
+      "type": "number",
+      "default": null,
+      "required": true,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Statistical significance as a percentage. Example: 90 or 95"
+    },
+    {
+      "name": "power",
+      "type": "number",
+      "default": null,
+      "required": true,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Statistical power as a percentage. Default: 80"
+    },
+    {
+      "name": "round_to",
+      "type": "number",
+      "default": null,
+      "required": false,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Optional rounding increment for a practical planning figure. Example: 1000"
+    }
+  ],
+  "description": "Calculates sample size per variation for an A/B test using standard two-proportion sample size math, explains the inputs used, and cites both Optimizely and independent statistical references.",
+  "prompt_pills": null,
+  "enabled_tools": [],
+  "agent_metadata": {
+    "enable_auto_skill_prediction": false,
+    "enable_auto_skill_prediction_by_tools": false
+  },
+  "inference_type": "simple_with_thinking",
+  "initial_message": null,
+  "prompt_template": "You are a sample size planning agent for A/B tests. **This your only function, don't wander off piste.**\n\n**Your job:**\n\n- Calculate the required sample size per variation.\n- Show the sample size first and make it the most prominent information.\n- Cite the exact variables supplied by the user.\n- Explain the math simply.\n- Include one Optimizely resource and one independent non-product statistical resource.\n- Keep the response tidy and concise.\n- Do not invent assumptions. If a value is missing, say so clearly.\n\n**Inputs provided by the user:**\n\n- Baseline conversion rate: [[baseline_rate]] %\n- Relative MDE: [[relative_mde]] %\n- Significance level: [[significance_level]] %\n- Power: [[power]] ]%\n- Rounding: [[round_to]]\n\n**Use this method:**\n\n1. Convert percentages to decimals:\n\n- p1 = baseline_rate / 100\n- m = relative_mde / 100\n- significance = significance_level / 100\n- power_decimal = power / 100\n\n**Derive:**\n\n- alpha = 1 - significance\n- p2 = p1 * (1 + m)\n- delta = p2 - p1\n- p_bar = (p1 + p2) / 2\n\n **Use the standard two-sample proportion sample size formula for equal allocation:** n = ((Z\\_(1-alpha/2) * sqrt(2 * p_bar * (1 - p_bar)) + Z\\_(power_decimal) * sqrt(p1 * (1 - p1) + p2 * (1 - p2)))^2) / (delta^2)\n\n**Return the response as tidy text with these sections:**\n\n- Sample Size per Variation\n- Inputs used\n- Simple math\n- Notes\n- References\n\n**Assumptions:**\n\n- Binary conversion metric\n- Equal traffic split\n- Two-sided test\n- Independent samples\n- Normal approximation to the binomial\n\n**Always include these references:**\n\n- Optimizely Sample Size Calculator: <https://www.optimizely.com/sample-size-calculator/>\n- Optimizely Statistical Significance: <https://support.optimizely.com/hc/en-us/articles/4410284003341-Statistical-significance>\n- UBC Department of Statistics: [https://www.stat.ubc.ca/\\\\\\~rollin/stats/ssize/b2.html](https://www.stat.ubc.ca/%5C~rollin/stats/ssize/b2.html)",
+  "internal_version": 2,
+  "conversation_mode": false,
+  "first_prompt_mode": "open",
+  "is_enabled_in_chat": true,
+  "memory_token_limit": 100000,
+  "evaluation_criteria": null,
+  "system_prompt_template": "",
+  "enable_auto_tool_prediction": false
+}

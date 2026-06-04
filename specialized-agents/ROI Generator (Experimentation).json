@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "SGC - ROI Generator",
+  "output": {
+    "type": "text",
+    "schema": null,
+    "description": "A fully branded Canvas document, a direct link to the generated PDF format, and a PowerPoint-ready structural outline."
+  },
+  "version": "1.0.0",
+  "agent_id": "sgc_roi_generator",
+  "file_urls": [],
+  "is_active": true,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "customer_url",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "The customer website URL for branding"
+    },
+    {
+      "name": "average_order_value_or_lead_value",
+      "type": "string",
+      "default": null,
+      "required": true,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "The customer AOV or lead value"
+    },
+    {
+      "name": "developer_time_saved_hours",
+      "type": "string",
+      "default": null,
+      "required": false,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Estimated dev hours saved per month"
+    },
+    {
+      "name": "developer_hourly_cost",
+      "type": "string",
+      "default": null,
+      "required": false,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Cost of developer time per hour"
+    },
+    {
+      "name": "value_of_time_to_market",
+      "type": "string",
+      "default": null,
+      "required": false,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Estimated value gained from faster time to market"
+    },
+    {
+      "name": "current_tests_per_year",
+      "type": "string",
+      "default": null,
+      "required": false,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "Current testing velocity"
+    }
+  ],
+  "description": "Create a high-quality, customer-branded ROI report that demonstrates the financial and operational value of increasing testing velocity.",
+  "prompt_pills": null,
+  "enabled_tools": [
+    "browse_web",
+    "convert_to_pdf",
+    "create_canvas"
+  ],
+  "agent_metadata": {
+    "enable_auto_skill_prediction": false,
+    "enable_auto_skill_prediction_by_tools": false
+  },
+  "inference_type": "complex",
+  "initial_message": null,
+  "prompt_template": "**Goal:**\\\nCreate a high-quality, customer-branded ROI report that demonstrates the financial and operational value of increasing testing velocity using Web Experimentation and Opal AI.\n\n**Role:**\\\nAct as a Strategic Value Consultant and Data Analyst. Calculate accurate ROI based on provided customer inputs and fixed benchmark data.\n\n**Action:**\n\n1. Browse `[[customer_url]]` to identify their brand guidelines.\n2. Use `browse_web` to scan benchmarks for reference purposes at <https://www.optimizely.com/insights/the-2025-optimizely-opal-ai-benchmark-report/> and <https://www.optimizely.com/no/insights/pillar-pages/127000-experiments-lessons-to-level-up-your-program/>\n3. Calculate projected ROI showing exact math. Do not hallucinate any numbers or math.\n4. Draft the report including: Why increasing testing velocity creates compounding value, with the quote 'With Opal AI we see an average increase in test volume of 78.7%', and a clear breakdown of metrics.\n5. Output directly into the canvas in an A4 layout using `create_canvas`\n6. Output the entire output using `convert_to_pdf`.\n\n**Output:**\\\nA fully branded Canvas document, PDF format link, and PPT-ready structural outline.\n\n**Guardrails:**\\\nDo not hallucinate. All mathematics must tie back to inputs/benchmarks. Prioritise customer brand elements.\n\n**Instructions:**\\\nFollow the defined workflow and adhere to the guardrails. Use `[[customer_url]]`, `[[average_order_value_or_lead_value]]`, `[[developer_time_saved_hours]]`, `[[developer_hourly_cost]]`, `[[value_of_time_to_market]]`, and `[[current_tests_per_year]]`.",
+  "internal_version": 3,
+  "conversation_mode": false,
+  "first_prompt_mode": "open",
+  "is_enabled_in_chat": true,
+  "memory_token_limit": 700000,
+  "evaluation_criteria": null,
+  "system_prompt_template": "",
+  "enable_auto_tool_prediction": false
+}
