@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "agent_type": "specialized",
+  "name": "Most visited pages",
+  "output": {
+    "type": "text",
+    "schema": null,
+    "description": null
+  },
+  "version": "1.0.0",
+  "agent_id": "most_visited_pages",
+  "is_active": true,
+  "is_deleted": false,
+  "parameters": [
+    {
+      "name": "number_of_pages",
+      "type": "number",
+      "default": null,
+      "required": false,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "The number of pages to retrieve"
+    },
+    {
+      "name": "base_url",
+      "type": "string",
+      "default": null,
+      "required": false,
+      "item_type": null,
+      "max_items": null,
+      "min_items": null,
+      "description": "The Base URL from the report"
+    }
+  ],
+  "description": "Use the underlying Google Analytics Data to create a list of top 5 pages.",
+  "prompt_pills": null,
+  "enabled_tools": [
+    "get_property_id",
+    "run_report",
+    "lookup_dimension_metric_names"
+  ],
+  "agent_metadata": {
+    "enable_auto_skill_prediction": false,
+    "enable_auto_skill_prediction_by_tools": false
+  },
+  "inference_type": "rudimentary",
+  "initial_message": null,
+  "prompt_template": "### Process:\n\n1. Use `get_property_id` to obtain the current Google Analytics property id, then use `lookup_dimension_metric_names` and `run_report` to obtain the top [[number_of_pages]] (default: 5) most visited pages.\n2. Create a list of only URLs, by combining the [[base_url]] (default: \"<https://moseybank.epi-demo.nl>\") with the path received from Google Analytics.\n3. Output only a list of URLs, nothing else - **DO NOT** output thought process details\n\n### Validation:\n\nThe list of pages must not be longer then [[number_of_pages]] if - and only if - [[number_of_pages]] is null or undefined, validate that the list of pages must not be longer then 5 items.\n\n### Good example 1:\n\n###### Inputs:\n\nnumber_of_pages: `5`\n\nbase_url: `https://moseybank.epi-demo.nl`\n\n###### Output:\n\n<https://moseybank.epi-demo.nl/>\\\n<https://moseybank.epi-demo.nl/become-a-customer>\\\n<https://moseybank.epi-demo.nl/insights>\\\n<https://moseybank.epi-demo.nl/insights/balancing-retirement-and-mortgage-payments-a-guide-for-pre-retirees>\\\n<https://moseybank.epi-demo.nl/hysavings>\n\n### Good example 2:\n\n###### Inputs:\n\nnumber_of_pages: `1`\n\nbase_url: `null`\n\n###### Output:\n\n<https://moseybank.epi-demo.nl/>\n\n### Good example 3:\n\n###### Inputs:\n\nnumber_of_pages: `null`\n\nbase_url: `https://example.com`\n\n###### Output:\n\n[https://example.com/](https://moseybank.epi-demo.nl/)\\\n<https://example.com/>[become-a-customer](https://moseybank.epi-demo.nl/become-a-customer)\\\n[https://example.com/insights](https://moseybank.epi-demo.nl/insights)\\\n[https://example.com/insights/balancing-retirement-and-mortgage-payments-a-guide-for-pre-retirees](https://moseybank.epi-demo.nl/insights/balancing-retirement-and-mortgage-payments-a-guide-for-pre-retirees)\\\n[https://example.com/hysavings](https://moseybank.epi-demo.nl/hysavings)",
+  "internal_version": 4,
+  "conversation_mode": false,
+  "first_prompt_mode": "open",
+  "is_enabled_in_chat": true,
+  "memory_token_limit": 100000,
+  "evaluation_criteria": null,
+  "system_prompt_template": "",
+  "enable_auto_tool_prediction": false
+}
